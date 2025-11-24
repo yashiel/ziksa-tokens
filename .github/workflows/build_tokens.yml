@@ -1,0 +1,46 @@
+name: Build Figma Design Token
+on:
+  push:
+    branches: ["main"]
+  #   pull_request:
+  #     branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build-token:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+      - run: npm ci
+      - run: rm -rf /platform_tokens
+      - run: npm run build
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update Design Tokens
+          commit_user_name: Design System Bot
+
+  # push-to-remote-repo:
+  #   runs-on: ubuntu-latest
+  #   needs: build-token
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Setup Node.js environment
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: latest
+  #     - name: Copy files to another remote repository
+  #       uses: nkoppel/push-files-to-another-repository@v1.1.2
+  #       env:
+  #         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+  #       with:
+  #         source-files: "designTokens/"
+  #         destination-username: ${{ secrets.API_DESTINATION_USERNAME }}
+  #         destination-repository: ${{ secrets.API_DESTINATION_REPO }}
+  #         destination-branch: ${{ secrets.API_DESTINATION_BRANCH }}
+  #         destination-directory: ${{ secrets.API_DESTINATION_DIRECTORY }}
+  #         commit-email: ${{secrets.API_EMAIL}}

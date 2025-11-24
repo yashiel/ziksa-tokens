@@ -1,0 +1,10 @@
+{
+  "tokenSetOrder": [
+    "brand/default",
+    "semantics/color",
+    "semantics/typography",
+    "semantics/layout",
+    "theme/light",
+    "theme/dark"
+  ]
+}

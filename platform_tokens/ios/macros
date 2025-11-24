@@ -1,0 +1,422 @@
+
+//
+// ios/macros
+//
+
+// Do not edit directly
+// Generated on Tue, 13 Feb 2024 05:41:54 GMT
+
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#define OcRadius0 0
+#define OcRadius2 2
+#define OcRadius4 4
+#define OcRadius8 8
+#define OcRadius16 16
+#define OcRadius24 24
+#define OcRadius32 32
+#define OcRadius50 50
+#define OcColorRed100 [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorRed200 [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorRed300 [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorRed400 [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorRed500 [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorRed600 [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorRed700 [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorRed800 [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorRed900 [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorGreen100 [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorGreen200 [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorGreen300 [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorGreen400 [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorGreen500 [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorGreen600 [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorGreen700 [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorGreen800 [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorGreen900 [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorYellow100 [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorYellow200 [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorYellow300 [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorYellow400 [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorYellow500 [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorYellow600 [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorYellow700 [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorYellow800 [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorYellow900 [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorBlue100 [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorBlue200 [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorBlue300 [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorBlue400 [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorBlue500 [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorBlue600 [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorBlue700 [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorBlue800 [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorBlue900 [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorOrange100 [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorOrange200 [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorOrange300 [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorOrange400 [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorOrange500 [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorOrange600 [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorOrange700 [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorOrange800 [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorOrange900 [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorTeal100 [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorTeal200 [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorTeal300 [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorTeal400 [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorTeal500 [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorTeal600 [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorTeal700 [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorTeal800 [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorTeal900 [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorGray10 [UIColor colorWithRed:0.945f green:0.945f blue:0.945f alpha:1.000f]
+#define OcColorGray20 [UIColor colorWithRed:0.886f green:0.886f blue:0.886f alpha:1.000f]
+#define OcColorGray30 [UIColor colorWithRed:0.831f green:0.831f blue:0.831f alpha:1.000f]
+#define OcColorGray40 [UIColor colorWithRed:0.776f green:0.776f blue:0.776f alpha:1.000f]
+#define OcColorGray50 [UIColor colorWithRed:0.663f green:0.663f blue:0.663f alpha:1.000f]
+#define OcColorGray60 [UIColor colorWithRed:0.553f green:0.553f blue:0.553f alpha:1.000f]
+#define OcColorGray70 [UIColor colorWithRed:0.439f green:0.439f blue:0.439f alpha:1.000f]
+#define OcColorGray80 [UIColor colorWithRed:0.353f green:0.353f blue:0.353f alpha:1.000f]
+#define OcColorGray90 [UIColor colorWithRed:0.263f green:0.263f blue:0.263f alpha:1.000f]
+#define OcColorGray100 [UIColor colorWithRed:0.176f green:0.176f blue:0.176f alpha:1.000f]
+#define OcColorGray200 [UIColor colorWithRed:0.133f green:0.133f blue:0.133f alpha:1.000f]
+#define OcColorGray300 [UIColor colorWithRed:0.086f green:0.086f blue:0.086f alpha:1.000f]
+#define OcColorGray400 [UIColor colorWithRed:0.043f green:0.043f blue:0.043f alpha:1.000f]
+#define OcColorWhiteWhite [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f]
+#define OcColorBlackBlack [UIColor colorWithRed:0.067f green:0.067f blue:0.067f alpha:1.000f]
+#define OcColorPrimaryDarker [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorPrimaryDark [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorPrimaryDefault [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorPrimaryLight [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorPrimaryLighter [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorPrimaryLightest [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorSecondaryDarker [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorSecondaryDark [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorSecondaryDefault [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorSecondaryLight [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorSecondaryLighter [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorSecondaryLightest [UIColor colorWithRed:0.945f green:0.498f blue:0.161f alpha:1.000f]
+#define OcColorAccentDarker [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorAccentDark [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorAccentDefault [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorAccentLight [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorAccentLighter [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorAccentLightest [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcColorSuccessDarker [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorSuccessDark [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorSuccessDefault [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorSuccessLight [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorSuccessLighter [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorSuccessLightest [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcColorWarningDarker [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorWarningDark [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorWarningDefault [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorWarningLight [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorWarningLighter [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorWarningLightest [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcColorInfoDarker [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorInfoDark [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorInfoDefault [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorInfoLight [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorInfoLighter [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorInfoLightest [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcColorErrorDarker [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorErrorDark [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorErrorDefault [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorErrorLight [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorErrorLighter [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorErrorLightest [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcColorNeutral10 [UIColor colorWithRed:0.945f green:0.945f blue:0.945f alpha:1.000f]
+#define OcColorNeutral20 [UIColor colorWithRed:0.886f green:0.886f blue:0.886f alpha:1.000f]
+#define OcColorNeutral30 [UIColor colorWithRed:0.831f green:0.831f blue:0.831f alpha:1.000f]
+#define OcColorNeutral40 [UIColor colorWithRed:0.776f green:0.776f blue:0.776f alpha:1.000f]
+#define OcColorNeutral50 [UIColor colorWithRed:0.663f green:0.663f blue:0.663f alpha:1.000f]
+#define OcColorNeutral60 [UIColor colorWithRed:0.553f green:0.553f blue:0.553f alpha:1.000f]
+#define OcColorNeutral70 [UIColor colorWithRed:0.439f green:0.439f blue:0.439f alpha:1.000f]
+#define OcColorNeutral80 [UIColor colorWithRed:0.353f green:0.353f blue:0.353f alpha:1.000f]
+#define OcColorNeutral90 [UIColor colorWithRed:0.263f green:0.263f blue:0.263f alpha:1.000f]
+#define OcColorNeutral100 [UIColor colorWithRed:0.176f green:0.176f blue:0.176f alpha:1.000f]
+#define OcColorNeutral200 [UIColor colorWithRed:0.133f green:0.133f blue:0.133f alpha:1.000f]
+#define OcColorNeutral300 [UIColor colorWithRed:0.086f green:0.086f blue:0.086f alpha:1.000f]
+#define OcColorNeutral400 [UIColor colorWithRed:0.043f green:0.043f blue:0.043f alpha:1.000f]
+#define OcColorNeutralBlack [UIColor colorWithRed:0.067f green:0.067f blue:0.067f alpha:1.000f]
+#define OcColorNeutralWhite [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f]
+#define OcBorderWidth1 1
+#define OcBorderWidth2 2
+#define OcBorderWidth3 3
+#define OcBorderWidth4 4
+#define OcBorderWidth5 5
+#define OcBorderWidth05 0.5
+#define OcBorderWidth15 1.5
+#define OcBorderWidth25 2.5
+#define OcBorderWidthNone 0
+#define OcOpacity25 25%
+#define OcOpacity50 50%
+#define OcOpacity75 75%
+#define OcOpacity100 100%
+#define OcOpacityNone none
+#define OcFontFamilyInter Inter
+#define OcFontWeight100 Thin
+#define OcFontWeight200 Extra Light
+#define OcFontWeight300 Light
+#define OcFontWeight400 Regular
+#define OcFontWeight500 Medium
+#define OcFontWeight600 Semi Bold
+#define OcFontWeight700 Bold
+#define OcFontWeight800 Extra Bold
+#define OcFontWeight900 Black
+#define OcLineHeight110 110%
+#define OcLineHeight130 130%
+#define OcLineHeight140 140%
+#define OcLineHeight150 150%
+#define OcSizing2 2*1
+#define OcSizing4 4*1
+#define OcSizing8 4*2
+#define OcSizing12 4*3
+#define OcSizing16 4*4
+#define OcSizing20 4*5
+#define OcSizing24 4*6
+#define OcSizing28 4*7
+#define OcSizing32 4*8
+#define OcSizing36 4*9
+#define OcSizing40 4*10
+#define OcSizing44 4*11
+#define OcSizing48 4*12
+#define OcSizing52 4*13
+#define OcSizing56 4*14
+#define OcSizing60 4*15
+#define OcSizing64 64
+#define OcLetterSpacing0 0%
+#define OcLetterSpacing1 1%
+#define OcLetterSpacing2 -2.5%
+#define OcLetterSpacing3 -2%
+#define OcLetterSpacing4 2%
+#define OcFontSize10 10
+#define OcFontSize12 12
+#define OcFontSize14 14
+#define OcFontSize16 16
+#define OcFontSize18 18
+#define OcFontSize20 20
+#define OcFontSize22 22
+#define OcFontSize24 24
+#define OcFontSize28 28
+#define OcFontSize32 32
+#define OcFontSize40 40
+#define OcFontSize48 48
+#define OcFontSize60 60
+#define OcFontSize76 76
+#define OcFontSize92 92
+#define OcTextCaseUppercase uppercase
+#define OcTextCaseNone none
+#define OcTextCaseLowercase lowercase
+#define OcTextCaseCapitalize capitalize
+#define OcParagaphSpacing4 4
+#define OcParagaphSpacing8 8
+#define OcParagaphSpacing12 12
+#define OcParagaphSpacing16 16
+#define OcTextDecorationNone none
+#define OcTextDecorationUnderline underline
+#define OcTextDecorationLineThrough line-through
+#define OcBase2 2
+#define OcBase4 4
+#define OcBase8 8
+#define OcWebSmallLight [object Object]
+#define OcWebSmallExtraLight [object Object]
+#define OcWebSmallRegular [object Object]
+#define OcWebSmallMedium [object Object]
+#define OcWebSmallSemiBold [object Object]
+#define OcWebSmallBold [object Object]
+#define OcWebLabelLight [object Object]
+#define OcWebLabelExtraLight [object Object]
+#define OcWebLabelRegular [object Object]
+#define OcWebLabelMedium [object Object]
+#define OcWebLabelSemiBold [object Object]
+#define OcWebLabelBold [object Object]
+#define OcWebBodySmallLight [object Object]
+#define OcWebBodySmallExtraLight [object Object]
+#define OcWebBodySmallRegular [object Object]
+#define OcWebBodySmallMedium [object Object]
+#define OcWebBodySmallSemiBold [object Object]
+#define OcWebBodySmallBold [object Object]
+#define OcWebBodyLight [object Object]
+#define OcWebBodyExtraLight [object Object]
+#define OcWebBodyRegular [object Object]
+#define OcWebBodyMedium [object Object]
+#define OcWebBodySemiBold [object Object]
+#define OcWebBodyBold [object Object]
+#define OcWebHeading6Light [object Object]
+#define OcWebHeading6ExtraLight [object Object]
+#define OcWebHeading6Regular [object Object]
+#define OcWebHeading6Medium [object Object]
+#define OcWebHeading6SemiBold [object Object]
+#define OcWebHeading6Bold [object Object]
+#define OcWebHeading5Light [object Object]
+#define OcWebHeading5ExtraLight [object Object]
+#define OcWebHeading5Regular [object Object]
+#define OcWebHeading5Medium [object Object]
+#define OcWebHeading5SemiBold [object Object]
+#define OcWebHeading5Bold [object Object]
+#define OcWebHeading4Light [object Object]
+#define OcWebHeading4ExtraLight [object Object]
+#define OcWebHeading4Regular [object Object]
+#define OcWebHeading4Medium [object Object]
+#define OcWebHeading4SemiBold [object Object]
+#define OcWebHeading4Bold [object Object]
+#define OcWebHeading3Light [object Object]
+#define OcWebHeading3ExtraLight [object Object]
+#define OcWebHeading3Regular [object Object]
+#define OcWebHeading3Medium [object Object]
+#define OcWebHeading3SemiBold [object Object]
+#define OcWebHeading3Bold [object Object]
+#define OcWebHeading2Light [object Object]
+#define OcWebHeading2ExtraLight [object Object]
+#define OcWebHeading2Regular [object Object]
+#define OcWebHeading2Medium [object Object]
+#define OcWebHeading2SemiBold [object Object]
+#define OcWebHeading2Bold [object Object]
+#define OcWebHeading1Light [object Object]
+#define OcWebHeading1ExtraLight [object Object]
+#define OcWebHeading1Regular [object Object]
+#define OcWebHeading1Medium [object Object]
+#define OcWebHeading1SemiBold [object Object]
+#define OcWebHeading1Bold [object Object]
+#define OcMobileSmallLight [object Object]
+#define OcMobileSmallUpperLight [object Object]
+#define OcMobileSmallUpperExtraLight [object Object]
+#define OcMobileSmallUpperRegular [object Object]
+#define OcMobileSmallUpperMedium [object Object]
+#define OcMobileSmallUpperSemiBold [object Object]
+#define OcMobileSmallUpperBold [object Object]
+#define OcMobileSmallExtraLight [object Object]
+#define OcMobileSmallRegular [object Object]
+#define OcMobileSmallMedium [object Object]
+#define OcMobileSmallSemiBold [object Object]
+#define OcMobileSmallBold [object Object]
+#define OcMobileLabelLight [object Object]
+#define OcMobileLabelUpperLight [object Object]
+#define OcMobileLabelUpperExtraLight [object Object]
+#define OcMobileLabelUpperRegular [object Object]
+#define OcMobileLabelUpperMedium [object Object]
+#define OcMobileLabelUpperSemiBold [object Object]
+#define OcMobileLabelUpperBold [object Object]
+#define OcMobileLabelExtraLight [object Object]
+#define OcMobileLabelRegular [object Object]
+#define OcMobileLabelMedium [object Object]
+#define OcMobileLabelSemiBold [object Object]
+#define OcMobileLabelBold [object Object]
+#define OcMobileBodyLight [object Object]
+#define OcMobileBodyExtraLight [object Object]
+#define OcMobileBodyRegular [object Object]
+#define OcMobileBodyMedium [object Object]
+#define OcMobileBodySemiBold [object Object]
+#define OcMobileBodyBold [object Object]
+#define OcMobileBodyLgLight [object Object]
+#define OcMobileBodyLgExtraLight [object Object]
+#define OcMobileBodyLgRegular [object Object]
+#define OcMobileBodyLgMedium [object Object]
+#define OcMobileBodyLgSemiBold [object Object]
+#define OcMobileBodyLgBold [object Object]
+#define OcMobileHeading6Light [object Object]
+#define OcMobileHeading6ExtraLight [object Object]
+#define OcMobileHeading6Regular [object Object]
+#define OcMobileHeading6Medium [object Object]
+#define OcMobileHeading6SemiBold [object Object]
+#define OcMobileHeading6Bold [object Object]
+#define OcLayoutRadius2 2
+#define OcLayoutRadius4 4
+#define OcLayoutRadius8 8
+#define OcLayoutRadius16 16
+#define OcLayoutRadius24 24
+#define OcLayoutRadiusNone 0
+#define OcLayoutRadiusRounded 50
+#define OcLayoutBorderPrimarySolid1 [object Object]
+#define OcLayoutBorderPrimarySolid2 [object Object]
+#define OcLayoutBorderPrimarySolid3 [object Object]
+#define OcLayoutBorderPrimarySolid4 [object Object]
+#define OcLayoutBorderPrimarySolid5 [object Object]
+#define OcLayoutBorderPrimarySolid05 [object Object]
+#define OcLayoutBorderPrimaryDashed1 [object Object]
+#define OcLayoutBorderPrimaryDashed2 [object Object]
+#define OcLayoutBorderPrimaryDashed3 [object Object]
+#define OcLayoutBorderPrimaryDashed4 [object Object]
+#define OcLayoutBorderPrimaryDashed5 [object Object]
+#define OcLayoutBorderPrimaryDashed05 [object Object]
+#define OcLayoutBorderSecondarySolid1 [object Object]
+#define OcLayoutBorderSecondarySolid2 [object Object]
+#define OcLayoutBorderSecondarySolid3 [object Object]
+#define OcLayoutBorderSecondarySolid4 [object Object]
+#define OcLayoutBorderSecondarySolid5 [object Object]
+#define OcLayoutBorderSecondarySolid05 [object Object]
+#define OcLayoutBorderSecondaryDashed1 [object Object]
+#define OcLayoutBorderSecondaryDashed2 [object Object]
+#define OcLayoutBorderSecondaryDashed3 [object Object]
+#define OcLayoutBorderSecondaryDashed4 [object Object]
+#define OcLayoutBorderSecondaryDashed5 [object Object]
+#define OcLayoutBorderSecondaryDashed05 [object Object]
+#define OcLayoutBorderNone [object Object]
+#define OcLayoutSpacingXxxs 4/2
+#define OcLayoutSpacingXxs 4*1
+#define OcLayoutSpacingXs 4*2
+#define OcLayoutSpacingSm 4*3
+#define OcLayoutSpacingMd 4*4
+#define OcLayoutSpacingLg 8*3
+#define OcLayoutSpacingXl 8*4
+#define OcLayoutSpacingXxl 8*5
+#define OcLayoutSpacingXxxl 8*6
+#define OcLayoutSpacingExtended1 8*7
+#define OcLayoutSpacingExtended2 8*8
+#define OcLayoutShadowPrimaryXsLeft [object Object]
+#define OcLayoutShadowPrimaryXsMid [object Object]
+#define OcLayoutShadowPrimaryXsRight [object Object]
+#define OcLayoutShadowPrimaryXxsLeft [object Object]
+#define OcLayoutShadowPrimaryXxsMid [object Object]
+#define OcLayoutShadowPrimaryXxsRight [object Object]
+#define OcLayoutShadowPrimaryXxxsLeft [object Object]
+#define OcLayoutShadowPrimaryXxxsMid [object Object]
+#define OcLayoutShadowPrimaryXxxsRight [object Object]
+#define OcLayoutShadowPrimaryMdLeft [object Object]
+#define OcLayoutShadowPrimaryMdMid [object Object]
+#define OcLayoutShadowPrimaryMdRight [object Object]
+#define OcTextHeading [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f]
+#define OcTextBody [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f]
+#define OcTextAction [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f]
+#define OcTextActionHover [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f]
+#define OcTextDisabled [UIColor colorWithRed:0.176f green:0.176f blue:0.176f alpha:1.000f]
+#define OcTextHighlight [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcTextInformation [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcTextSuccess [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcTextWarning [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcTextError [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcTextOnAction [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f]
+#define OcTextOnDisabled [UIColor colorWithRed:0.043f green:0.043f blue:0.043f alpha:1.000f]
+#define OcSurfacePage [UIColor colorWithRed:0.043f green:0.043f blue:0.043f alpha:1.000f]
+#define OcSurfacePrimary [UIColor colorWithRed:0.086f green:0.086f blue:0.086f alpha:1.000f]
+#define OcSurfaceSecondary [UIColor colorWithRed:0.133f green:0.133f blue:0.133f alpha:1.000f]
+#define OcSurfaceDisabled [UIColor colorWithRed:0.776f green:0.776f blue:0.776f alpha:1.000f]
+#define OcSurfaceSuccess [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcSurfaceError [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcSurfaceWarning [UIColor colorWithRed:0.043f green:0.043f blue:0.043f alpha:1.000f]
+#define OcSurfaceInformation [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcSurfaceHighlight [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcSurfaceAction [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcSurfaceActionHover [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcBorderPrimary [UIColor colorWithRed:0.831f green:0.831f blue:0.831f alpha:1.000f]
+#define OcBorderSecondary [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcBorderInformation [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcBorderSuccess [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcBorderWarning [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcBorderError [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+#define OcBorderDisabled [UIColor colorWithRed:0.439f green:0.439f blue:0.439f alpha:1.000f]
+#define OcBorderAction [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcBorderActionHover [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcBorderFocus [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcBorderHighlight [UIColor colorWithRed:0.133f green:0.573f blue:0.643f alpha:1.000f]
+#define OcIconPrimary [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcIconInformation [UIColor colorWithRed:0.000f green:0.396f blue:1.000f alpha:1.000f]
+#define OcIconSuccess [UIColor colorWithRed:0.031f green:0.486f blue:0.263f alpha:1.000f]
+#define OcIconWarning [UIColor colorWithRed:0.918f green:0.690f blue:0.063f alpha:1.000f]
+#define OcIconError [UIColor colorWithRed:0.761f green:0.129f blue:0.059f alpha:1.000f]
+
