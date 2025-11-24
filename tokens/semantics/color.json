@@ -28,27 +28,27 @@
     },
     "secondary": {
       "darker": {
-        "value": "{color.orange.800}",
+        "value": "{color.darkblue.800}",
         "type": "color"
       },
       "dark": {
-        "value": "{color.orange.600}",
+        "value": "{color.darkblue.600}",
         "type": "color"
       },
       "default": {
-        "value": "{color.orange.500}",
+        "value": "{color.darkblue.500}",
         "type": "color"
       },
       "light": {
-        "value": "{color.orange.300}",
+        "value": "{color.darkblue.300}",
         "type": "color"
       },
       "lighter": {
-        "value": "{color.orange.200}",
+        "value": "{color.darkblue.200}",
         "type": "color"
       },
       "lightest": {
-        "value": "{color.orange.100}",
+        "value": "{color.darkblue.100}",
         "type": "color"
       }
     },
