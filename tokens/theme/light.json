@@ -59,7 +59,7 @@
       "type": "color"
     },
     "secondary": {
-      "value": "{color.gray.10}",
+      "value": "{color.gray.1}",
       "type": "color"
     },
     "disabled": {
