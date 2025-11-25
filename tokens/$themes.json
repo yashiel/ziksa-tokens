@@ -386,7 +386,6 @@
       "color.secondary.darker": "773bf23f29076e365bfcec1dbe724644dc96919e",
       "color.secondary.dark": "68444f9b69cbbf9b7b69889c4cf408757529f290",
       "color.secondary.default": "5662e623a34da65fe626c5717f249ae67db6031c",
-      "color.secondary.light": "f8af5915f77b47f29e19d8dc75a8c8b50ed174df",
       "color.secondary.lighter": "679899cd5ca4cd757ad7737ae1712da1d23267c6",
       "color.secondary.lightest": "a20827697aba7e1049e4a92dbf2a91bea09fe6c7",
       "color.accent.darker": "d155f0cb0de3c6761cd644ddfa8ec3ba594d5898",
@@ -433,7 +432,8 @@
       "color.neutral.300": "d80d2614eb2191c6a370d3589064e657f8f0bf94",
       "color.neutral.400": "b117887369bf7419bbc868a7bc5760b230f39564",
       "color.neutral.black": "61304265a5801cd35f28db95d34e494aab431d07",
-      "color.neutral.white": "23e21994216822eb048cb634b1eaa62e8a7a2256"
+      "color.neutral.white": "23e21994216822eb048cb634b1eaa62e8a7a2256",
+      "color.secondary.light": "f8af5915f77b47f29e19d8dc75a8c8b50ed174df"
     },
     "group": "semantics"
   },
