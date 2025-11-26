@@ -12,7 +12,7 @@
  * HISTORY:
  */
 
-import { readFileSync } from "fs";
+import { readFileSync, writeFileSync, unlinkSync } from "fs";
 import StyleDictionary from "style-dictionary";
 import {
   registerTransforms,
@@ -76,139 +76,186 @@ const { fileHeader, formattedVariables } = StyleDictionary.formatHelpers;
 
 const $themes = JSON.parse(readFileSync("./tokens/$themes.json", "utf-8"));
 const themes = permutateThemes($themes, { separator: "_" });
-const configs = Object.entries(themes).map(([name, tokensets]) => ({
-  source: tokensets.map((tokenset) => `./tokens/${tokenset}.json`),
-  platforms: {
-    css: {
-      buildPath: "platform_tokens/css/",
-      prefix: "zk_",
-      // transformGroup: "tokens-studio",
-      transforms: [
-        "attribute/cti",
-        "name/cti/kebab",
-        "time/seconds",
-        "content/icon",
-        "color/css",
-        "scale/unit",
-        // "width/px", //
-        "ts/descriptionToComment",
-        "ts/size/px",
-        // "size/rem",
-        "ts/opacity",
-        "ts/size/lineheight",
-        "ts/typography/fontWeight",
-        "ts/resolveMath",
-        "ts/size/css/letterspacing",
-        "ts/typography/css/fontFamily",
-        "ts/typography/css/shorthand",
-        "ts/border/css/shorthand",
-        "ts/shadow/css/shorthand",
-        "ts/color/css/hexrgba",
-        "ts/color/modifiers",
-      ],
-      options: {
-        outputReferences: true,
+const brandDefaultTokens = JSON.parse(
+  readFileSync("./tokens/brand/default.json", "utf-8")
+);
+
+const configs = Object.entries(themes).map(([name, tokensets]) => {
+  const sourceFiles = tokensets.map((tokenset) => `./tokens/${tokenset}.json`);
+
+  const brandDefaultPath = "./tokens/brand/default.json";
+  const hasBrandDefault = sourceFiles.includes(brandDefaultPath);
+
+  const otherFiles = sourceFiles.filter((f) => f !== brandDefaultPath);
+
+  const orderedFiles = hasBrandDefault
+    ? [brandDefaultPath, ...otherFiles]
+    : [brandDefaultPath, ...otherFiles];
+
+  const mergedTokensFile = `./tokens/.merged-${name}.json`;
+
+  function deepMerge(target, source) {
+    const output = { ...target };
+    for (const key in source) {
+      if (
+        source[key] &&
+        typeof source[key] === "object" &&
+        !Array.isArray(source[key]) &&
+        source[key].type === undefined
+      ) {
+        output[key] = deepMerge(target[key] || {}, source[key]);
+      } else {
+        output[key] = source[key];
+      }
+    }
+    return output;
+  }
+
+  const mergedTokens = orderedFiles.reduce((acc, file) => {
+    const tokens = JSON.parse(readFileSync(file, "utf-8"));
+    return deepMerge(acc, tokens);
+  }, {});
+  writeFileSync(mergedTokensFile, JSON.stringify(mergedTokens, null, 2));
+
+  return {
+    source: [mergedTokensFile],
+    platforms: {
+      css: {
+        buildPath: "platform_tokens/css/",
+        prefix: "zk_",
+        // transformGroup: "tokens-studio",
+        transforms: [
+          "attribute/cti",
+          "name/cti/kebab",
+          "time/seconds",
+          "content/icon",
+          "color/css",
+          "scale/unit",
+          // "width/px", //
+          "ts/descriptionToComment",
+          "ts/size/px",
+          // "size/rem",
+          "ts/opacity",
+          "ts/size/lineheight",
+          "ts/typography/fontWeight",
+          "ts/resolveMath",
+          "ts/size/css/letterspacing",
+          "ts/typography/css/fontFamily",
+          "ts/typography/css/shorthand",
+          "ts/border/css/shorthand",
+          "ts/shadow/css/shorthand",
+          "ts/color/css/hexrgba",
+          "ts/color/modifiers",
+        ],
+        options: {
+          outputReferences: true,
+        },
+        files: [
+          {
+            destination: `_variables-${name}.css`,
+            format: "css/variables",
+          },
+        ],
       },
-      files: [
-        {
-          destination: `_variables-${name}.css`,
-          format: "css/variables",
-        },
-      ],
+      js: {
+        buildPath: "platform_tokens/js/",
+        prefix: "zk_",
+        transformGroup: "tokens-studio",
+        files: [
+          {
+            destination: `variables-${name}.js`,
+            format: "javascript/es6",
+          },
+        ],
+      },
+      Android: {
+        buildPath: "platform_tokens/",
+        prefix: "zk_",
+        transformGroup: "android",
+        files: [
+          {
+            destination: `android/resource-${name}.xml`,
+            format: "android/resources",
+          },
+        ],
+      },
+      ios: {
+        buildPath: "platform_tokens/",
+        prefix: "zk-",
+        transformGroup: "ios",
+        files: [
+          {
+            destination: `ios/static-${name}.h`,
+            format: "ios/static.h",
+          },
+          {
+            destination: `ios/static-${name}.m`,
+            format: "ios/static.m",
+          },
+          {
+            destination: `ios/singleton-${name}.h`,
+            format: "ios/singleton.h",
+          },
+          {
+            destination: `ios/singleton-${name}.m`,
+            format: "ios/singleton.m",
+          },
+          {
+            destination: "ios/plist",
+            format: "ios/plist",
+          },
+          {
+            destination: "ios/macros",
+            format: "ios/macros",
+          },
+          {
+            destination: `ios/colors-${name}.h`,
+            format: "ios/colors.h",
+          },
+          {
+            destination: `ios/colors-${name}.m`,
+            format: "ios/colors.m",
+          },
+          {
+            destination: `ios/strings-${name}.h`,
+            format: "ios/strings.h",
+          },
+          {
+            destination: `ios/strings-${name}.m`,
+            format: "ios/strings.m",
+          },
+        ],
+      },
+      "ios-swift": {
+        buildPath: "platform_tokens/",
+        prefix: "zk_",
+        transformGroup: "ios-swift",
+        files: [
+          {
+            destination: `ios-swift/class-${name}.swift`,
+            format: "ios-swift/class.swift",
+          },
+          {
+            destination: `ios-swift/enum-${name}.swift`,
+            format: "ios-swift/enum.swift",
+          },
+          {
+            destination: `ios-swift/any-${name}.swift`,
+            format: "ios-swift/any.swift",
+          },
+        ],
+      },
     },
-    js: {
-      buildPath: "platform_tokens/js/",
-      prefix: "zk_",
-      transformGroup: "tokens-studio",
-      files: [
-        {
-          destination: `variables-${name}.js`,
-          format: "javascript/es6",
-        },
-      ],
-    },
-    Android: {
-      buildPath: "platform_tokens/",
-      prefix: "zk_",
-      transformGroup: "android",
-      files: [
-        {
-          destination: `android/resource-${name}.xml`,
-          format: "android/resources",
-        },
-      ],
-    },
-    ios: {
-      buildPath: "platform_tokens/",
-      prefix: "zk-",
-      transformGroup: "ios",
-      files: [
-        {
-          destination: `ios/static-${name}.h`,
-          format: "ios/static.h",
-        },
-        {
-          destination: `ios/static-${name}.m`,
-          format: "ios/static.m",
-        },
-        {
-          destination: `ios/singleton-${name}.h`,
-          format: "ios/singleton.h",
-        },
-        {
-          destination: `ios/singleton-${name}.m`,
-          format: "ios/singleton.m",
-        },
-        {
-          destination: "ios/plist",
-          format: "ios/plist",
-        },
-        {
-          destination: "ios/macros",
-          format: "ios/macros",
-        },
-        {
-          destination: `ios/colors-${name}.h`,
-          format: "ios/colors.h",
-        },
-        {
-          destination: `ios/colors-${name}.m`,
-          format: "ios/colors.m",
-        },
-        {
-          destination: `ios/strings-${name}.h`,
-          format: "ios/strings.h",
-        },
-        {
-          destination: `ios/strings-${name}.m`,
-          format: "ios/strings.m",
-        },
-      ],
-    },
-    "ios-swift": {
-      buildPath: "platform_tokens/",
-      prefix: "zk_",
-      transformGroup: "ios-swift",
-      files: [
-        {
-          destination: `ios-swift/class-${name}.swift`,
-          format: "ios-swift/class.swift",
-        },
-        {
-          destination: `ios-swift/enum-${name}.swift`,
-          format: "ios-swift/enum.swift",
-        },
-        {
-          destination: `ios-swift/any-${name}.swift`,
-          format: "ios-swift/any.swift",
-        },
-      ],
-    },
-  },
-}));
+  };
+});
 
 configs.forEach((cfg) => {
   const sd = StyleDictionary.extend(cfg);
-  sd.cleanAllPlatforms(); // optionally, cleanup files first..
+  sd.cleanAllPlatforms();
   sd.buildAllPlatforms();
+
+  const mergedFile = cfg.source[0];
+  if (mergedFile && mergedFile.startsWith("./tokens/.merged-")) {
+    unlinkSync(mergedFile);
+  }
 });
