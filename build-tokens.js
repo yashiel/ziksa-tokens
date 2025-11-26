@@ -1,3 +1,17 @@
+/*
+ * File: /Users/yashi/Downloads/ziksa-token/build-tokens.js
+ * Project: /Users/yashi/Downloads/ziksa-token
+ * Created Date: Tuesday February 13th 2024
+ * Author: Yashi EL
+ * -----
+ * Last Modified: Tuesday February 13th 2024 11:11:54 am
+ * Modified By: the developer formerly known as Yashi EL at <hi@yashiel.com>
+ * -----
+ * Copyright (c) 2025 Yashi Digital Agency
+ * -----
+ * HISTORY:
+ */
+
 import { readFileSync } from "fs";
 import StyleDictionary from "style-dictionary";
 import {
@@ -61,7 +75,7 @@ const configs = Object.entries(themes).map(([name, tokensets]) => ({
   platforms: {
     css: {
       buildPath: "platform_tokens/css/",
-      prefix: "oc_",
+      prefix: "zk_",
       // transformGroup: "tokens-studio",
       transforms: [
         "attribute/cti",
@@ -98,7 +112,7 @@ const configs = Object.entries(themes).map(([name, tokensets]) => ({
     },
     js: {
       buildPath: "platform_tokens/js/",
-      prefix: "oc_",
+      prefix: "zk_",
       transformGroup: "tokens-studio",
       files: [
         {
@@ -109,7 +123,7 @@ const configs = Object.entries(themes).map(([name, tokensets]) => ({
     },
     Android: {
       buildPath: "platform_tokens/",
-      prefix: "oc_",
+      prefix: "zk_",
       transformGroup: "android",
       files: [
         {
@@ -120,7 +134,7 @@ const configs = Object.entries(themes).map(([name, tokensets]) => ({
     },
     ios: {
       buildPath: "platform_tokens/",
-      prefix: "oc-",
+      prefix: "zk-",
       transformGroup: "ios",
       files: [
         {
@@ -167,7 +181,7 @@ const configs = Object.entries(themes).map(([name, tokensets]) => ({
     },
     "ios-swift": {
       buildPath: "platform_tokens/",
-      prefix: "oc_",
+      prefix: "zk_",
       transformGroup: "ios-swift",
       files: [
         {
