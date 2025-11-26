@@ -67,7 +67,7 @@
       "type": "color"
     },
     "success": {
-      "value": "{color.primary.darker}",
+      "value": "{color.primary.900}",
       "type": "color"
     },
     "error": {
@@ -87,7 +87,7 @@
       "type": "color"
     },
     "action": {
-      "value": "{color.primary.darker}",
+      "value": "{color.primary.900}",
       "type": "color"
     },
     "action-hover": {
