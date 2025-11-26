@@ -29,11 +29,11 @@
       "type": "color"
     },
     "success": {
-      "value": "{color.success.darker}",
+      "value": "{color.success.900}",
       "type": "color"
     },
     "warning": {
-      "value": "{color.warning.darker}",
+      "value": "{color.warning.900}",
       "type": "color"
     },
     "error": {
