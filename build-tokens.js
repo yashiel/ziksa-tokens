@@ -41,6 +41,12 @@ registerTransforms(StyleDictionary, {
 //   },
 // });
 
+function throwSizeError(name, value, unit) {
+  throw new Error(
+    `Invalid size value for token "${name}": "${value}". Expected a number for conversion to ${unit}.`
+  );
+}
+
 StyleDictionary.registerTransform({
   type: `value`,
   name: `scale/unit`,
@@ -69,7 +75,7 @@ StyleDictionary.registerTransform({
 const { fileHeader, formattedVariables } = StyleDictionary.formatHelpers;
 
 const $themes = JSON.parse(readFileSync("./tokens/$themes.json", "utf-8"));
-const themes = permutateThemes($themes, { seperator: "_" });
+const themes = permutateThemes($themes, { separator: "_" });
 const configs = Object.entries(themes).map(([name, tokensets]) => ({
   source: tokensets.map((tokenset) => `./tokens/${tokenset}.json`),
   platforms: {
